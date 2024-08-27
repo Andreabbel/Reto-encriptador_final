@@ -1,1 +1,137 @@
+@import url(http://127.0.0.1:5500/);
+<body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
 
+h1 {
+    font-size: 24px;
+    color: #003366;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+textarea, select, button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #9f8686d5;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: #003366;
+}
+
+button:hover {
+    background-color: #0055a5;
+}
+
+.encrypt-button {
+    background-color: #25d125; /* Rosado */
+}
+
+.decrypt-button {
+    background-color: #0bc1cb; /* Azul */
+}
+
+#placeholder-image {
+    width: 140%;
+    height: auto;
+    display: block; /* Visible por defecto */
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 15%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #9f8686d5;
+
+    
+}
+
+
+
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-section, .right-section {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Estilos para pantallas de escritorio */
+@media only screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .left-section {
+        width: 60%;
+    }
+
+    .right-section {
+        width: 40%;
+        background-color: #a684bc;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
